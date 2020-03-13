@@ -511,8 +511,32 @@
     width: 90%;
 }
 
+@mixin full() {
+    width: 100%;
+    height: 100%;
+}
+
 @mixin group_a() {
     width: 35px;
     height: 35px;
     padding-top: $size_small;
+}
+
+@mixin relative() {
+    overflow: hidden;
+    position: relative;
+}
+
+@mixin label() {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
+
+@mixin avata() {
+    width: 100%;
+    transform: scale(3.2);
+    position: absolute;
+    top: 28px;
+    left: 14px;
 }
